@@ -15,7 +15,7 @@ Atividade prática de desenvolvimento de uma API REST utilizando Python, FastAPI
 ## Como executar o projeto
 
 1. Clone este repositório:
-   `https://github.com/ReyArthur/Desenvolvimento-de-API-CRUD.git`
+   `git clone https://github.com/ReyArthur/Desenvolvimento-de-API-CRUD.git`
 
 2. Instale as dependências:
    `pip install -r requirements.txt`
