@@ -3,8 +3,8 @@
 Atividade prática de desenvolvimento de uma API REST utilizando Python, FastAPI e MongoDB.
 
 ## 👥 Integrantes da Dupla
-- Nome do Aluno 1
-- Nome do Aluno 2
+- Arthur da Rosa Larcerda
+- Jefferson Carneiro
 
 ## 🚀 Tecnologias Utilizadas
 - **Python 3**
