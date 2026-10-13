@@ -14,7 +14,6 @@ app = FastAPI(
 # ==========================================
 # CONFIGURAÇÃO DO BANCO DE DADOS (MongoDB)
 # ==========================================
-# Se estiver usando MongoDB Atlas, substitua a URI abaixo pela sua string de conexão.
 MONGO_URI = "mongodb://localhost:27017/"
 client = MongoClient(MONGO_URI)
 db = client["biblioteca_db"]
@@ -42,7 +41,6 @@ class LivroResponse(BaseModel):
     ano: int
     preco: float
 
-# Função auxiliar para converter o documento do MongoDB no formato de resposta
 def livro_helper(livro) -> dict:
     return {
         "id": str(livro["_id"]),
@@ -91,7 +89,7 @@ def atualizar_livro(id: str, livro_atualizado: LivroUpdate):
     except InvalidId:
         raise HTTPException(status_code=400, detail="Formato de ID inválido.")
     
-    # Filtra apenas os campos que foram preenchidos (não nulos)
+    # Filtra apenas os campos que foram preenchidos 
     campos_para_atualizar = {k: v for k, v in livro_atualizado.model_dump().items() if v is not None}
     
     if len(campos_para_atualizar) >= 1:
