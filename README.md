@@ -2,7 +2,7 @@
 
 Atividade prática de desenvolvimento de uma API REST utilizando Python, FastAPI e MongoDB.
 
-## 👥 Integrantes da Dupla
+## Integrantes da Dupla
 - Arthur da Rosa Larcerda
 - Jefferson Carneiro
 
